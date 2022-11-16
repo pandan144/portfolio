@@ -44,11 +44,11 @@ header{
 }
 /* banear */
 .banear{
-	background-image:url("../img/developer.png");
+	background-image:url("../img/hero-bg.jpg");
 	background-position:center;
 	background-size:cover;
 	width:100%;
-	height:100vh;
+	height:80vh;
 	position:relative;
 	z-index:997;
 }
@@ -65,20 +65,24 @@ header{
 	position:absolute;
 	color:white;
 	z-index:997;
-	top:50%; 
-	/* left:20%; 
-	 transform:translate(-50%,50%); */
+	top:48%; 
+	 left:0%; 
+	 transform:translate(10%,-50%); 
 }
 .banear h1{
-	font-size:1.5rem;
+	font-size:1.2rem;
 	letter-spacing:1px;
 }
 .banear p{
 	font-size:1rem;
 	letter-spacing:1px;
+	margin:1rem 0;
+}
+.banear span{
+	color:#ed430d;
 }
 .banear a{
-	background-color:blue;
+	background-color:#ed430d;
 	padding:0.5rem 1rem;
 	color:white;
 	border-radius:20px;
@@ -88,7 +92,6 @@ header{
 }
 /* //about */
 .about{
-	background-color:;
 	padding:3rem 0;
 }
 .abou {
@@ -101,7 +104,7 @@ header{
 	font-size:1rem;
 	font-weight:bold;
 	letter-spacing:1px;
-	margin:0.5rem 0;
+	/* margin:0.5rem 0; */
 	position:relative;
 }
 .abou h1::before{
@@ -111,14 +114,16 @@ header{
 	height:3px;
 	background-color:#ed430d;
 	border-radius:10px;
-	top:1.5rem;
+	top:1.3rem;
 	left:50%;
 	transform:translate(-50%,-50%); 
 }
 .abou p{
 	font-size:0.9rem;
-	color:gray;
+	color:black;
 	letter-spacing:1px;
+	margin:1rem 0;
+	line-height:1rem;
 }
 .about-cont{
 	width:100%;
@@ -131,8 +136,11 @@ header{
 	margin:auto;
 }
 .about-img img{
-	width:100%;
+	width:200px;
+	height:200px;
 	border-radius:50%;
+	display:flex;
+	margin:auto;
 }
 .img-cont{
 	width:100%;
@@ -142,7 +150,9 @@ header{
 .img-cont h1{
 	font-size:1rem;
 	letter-spacing:1px;
-	margin:1rem 0;
+	margin:0.5rem 0;
+	color:#ed430d;
+	font-weight:bold;
 }
 .img-cont p{
 	font-size:0.9rem;
@@ -152,9 +162,22 @@ header{
 	line-height:1rem;
 }
 /* skill */
+.skill{
+	padding:1rem 0;
+}
+.skil{
+	width:100%;
+	background-color:blue;
+	margin:1rem 0;
+	color:pink;
+}
+
 .skill-pro progress{
 	width:100%;
-	height:1rem;
+	height:1.5rem;
+}
+progress::-webkit-progress-value{
+    background-color:#ccc !important;
 }
 .skill-pro span{
 	font-size:0.9rem;
@@ -176,19 +199,31 @@ header{
 	font-weight:bold;
 	font-size:1rem;
 }
+/* resume */
+.resume{
+    background: linear-gradient(45deg, #3fd5c1, #33aee5);
+	padding:1rem 0;
+}
+.resume-infor{
+	display:black;
+	justify-content:center;
+	line-height:2rem;
+}
+/* resume end */
 /* servise */
 .service{
-	padding:2rem 0;
+	background:linear-gradient(45deg, #3fd5c1, #33aee5);
+	padding:1rem 0;
 }
 .ser-box{
 	margin:2.2rem 0;
 }
 .box{
-	background-color:#ff5722;
+	background:repeating-linear-gradient(45deg, #2fabe5, #2293ed 1px);
 	text-align:center;
 	padding:2rem 0;
-	box-shadow:0 0 10px 1px #ccc; 
-	margin:0.5rem 0;
+	box-shadow:0 0 5px 0px #ccc; 
+	margin:1rem 0;
 }
 .ser-icon{
 	background-color:#84d1db;
@@ -339,58 +374,6 @@ header{
 	color:white;
 	padding-top:10px;
 }
-.form{
-	width:100%;
-	padding:5px;
-	
-}
-.name{
-	width:100%;
-	display:block;
-	justify-content:space-between;
-}
-.name input{
-	width:100%;
-	padding:5px;
-	letter-spacing:1px;
-	font-size:1rem;
-	color:gray;
-	margin:0.4rem 0;
-	outline-color:orange;
-}
-.name input:hover{
-	 overflow:; 
-}
-.subject input{
-	width:100%;
-	height:auto;
-	margin:10px 0px 0px 0px;
-	padding:10px;
-	letter-spacing:1px;
-	font-weight:15px;
-	font-size:13px;
-	color:gray;
-	outline-color:orange;
-
-}
-.tet textarea{
-	width:100%;
-	padding:10px;
-	margin:10px 0px 0px 0px;
-	font-weight:bold;
-	outline-color:orange
-}
-.form button{
-	background-color:black;
-	color:white;
-	text-align:center;
-	padding:10px 30px;
-	left:50px;
-}
-.form button:hover{
-	background-color:white;
-	color:black;
-}
 .footer{
 	background-color:black;
 	color:white;
@@ -413,7 +396,7 @@ header{
 }
 @media(min-width:580px){
 header{
-	background:background: linear-gradient(45deg, #021703, transparent);;
+	background:background: linear-gradient(45deg, #021703, transparent);
 	
 }
 .container{
@@ -518,8 +501,8 @@ header{
 	order:2;
 }
 .about-img img{
-	width:60%;
-	height:60%;
+	width:300px;
+	height:300px;
 	border-radius:50%;
 	display:flex;
 	margin:auto;
@@ -555,9 +538,20 @@ header{
 	font-weight:bold;
 	
 }
+/* resume */
+.resume{
+    background: linear-gradient(45deg, #3fd5c1, #33aee5);
+}
+.resume-infor{
+	display:flex;
+	justify-content:space-evenly;
+	line-height:2rem;
+}
+/* resume end */
 /* servise */
 .service{
 	padding:2rem 0;
+	background: linear-gradient(45deg, #3fd5c1, #33aee5);
 }
 .ser-box{
 	display:flex;
@@ -566,7 +560,7 @@ header{
 }
 .box{
 	width:49%;
-	background: repeating-linear-gradient(45deg, #ff5722, transparent 360px);
+	background:repeating-linear-gradient(45deg, #2fabe5, #2293ed 1px);
 	text-align:center;
 	padding:2rem 0;
 	box-shadow:0 0 10 1px #ccc;
@@ -725,53 +719,6 @@ header{
 	color:white;
 	padding-top:10px;
 }
-.form{
-	width:100%;
-	padding:5px;
-	
-}
-.name{
-	width:100%;
-	height:auto;
-	display:flex;
-	justify-content:space-between;
-}
-.name input{
-	width:48%;
-	padding:5px;
-	letter-spacing:1px;
-	font-size:1rem;
-	color:gray;
-	outline-color:orange;
-}
-.subject input{
-	width:100%;
-	height:auto;
-	margin:10px 0px 0px 0px;
-	padding:10px;
-	letter-spacing:1px;
-	font-weight:15px;
-	font-size:13px;
-	color:gray;
-	outline-color:orange;
-}
-.tet textarea{
-	width:100%;
-	padding:10px;
-	margin:10px 0px 0px 0px;
-	font-weight:bold;
-	outline-color:orange;
-}
-.form button{
-	background-color:black;
-	color:white;
-	text-align:center;
-	padding:10px 30px;
-}
-.form button:hover{
-	background-color:white;
-	color:black;
-}
 .footer{
 	background-color:black;
 	color:white;
@@ -888,11 +835,14 @@ header{
 	letter-spacing:1px;
 }
 .banear a:hover{
-	color:gray;
+	color:black;
 }
 /* //about */
 .about{
 	padding:1rem 0;
+}
+#active{
+	color:#ed430d;
 }
 .abou{
 	margin:0.5rem 0;
@@ -916,7 +866,7 @@ header{
 	border-radius:10px;
 	top:2.5rem;
 	left:50%;
-	 transform:translate(-50%,-50%); 
+	transform:translate(-50%,-50%); 
 }
 .abou span{
 	color:#ed430d;
@@ -926,6 +876,7 @@ header{
 	font-size:1.2rem;
 	color:gray;
 	letter-spacing:1px;
+	line-height:1.5rem;
 }
 .about-cont{
 	display:flex;
@@ -941,7 +892,7 @@ header{
 	align-items: center;
     justify-content: center;
     display: flex;
-    box-shadow: 0 0 15px 0px black;
+    box-shadow: 0 0 10px 0px #ccc;
 }
 .about-img img{
 	border-radius:50%;
@@ -959,21 +910,34 @@ header{
 	margin:1rem 0;
 	font-weight:bold;
 }
+.deat1 li{
+	list-style-type:circle;
+}
 /* skill */
-.skill-pro progress{
+.skill-pro{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.skil{
+	width:49%;
+	text-align:center;
+}
+.skill-pro progress::-webkit-progress-bar{
 	width:100%;
 	height:1.5rem;
 }
-.skill-pro span{
+.skill-pro p{
 	font-size:1.1rem;
-	padding-top:10px;
+	margin:1rem 0;
 	font-weight:bold;
 }
 .skill-pro i{
 	font-size:2rem;
 	padding-top:10px;
-	
+	color:green;
 }
+/* skill end */
 .deatial{
 	display:flex;
 	justify-content:space-between;
@@ -988,6 +952,20 @@ header{
 	font-size:1rem;
 	
 }
+/* resume */
+.resume{
+    background: linear-gradient(45deg, #3fd5c1, #33aee5);
+}
+.resume-infor{
+	display:flex;
+	justify-content:space-around;
+	
+	line-height:2rem;
+}
+/* resume end */
+.service{
+	 background: linear-gradient(45deg, #3fd5c1, #33aee5);
+}
 .ser-box{
 	display:flex;
 	justify-content:space-between;
@@ -996,14 +974,13 @@ header{
 	text-align:center;
 }
 .box{
-	border:1px solid;
 	border-radius:5px;
 	padding:1.5rem 0;
 	width:23%;
-	background: repeating-linear-gradient(45deg, #ff5722, transparent 300px);
-	box-shadow:0 0 10px 1px #ccc;
+	background: repeating-linear-gradient(45deg, #2fabe5, #2293ed 0.2px);
+	box-shadow: 0 0 10px #5f7a86;
 }
-.box:hover{
+.box:hover {
 	transform: translate3d(10px, 10px, 10px);
 	transition-timing-function:ease-in;
 	transition-duration:.2s;
@@ -1041,8 +1018,8 @@ header{
 	justify-content:space-between;
 	flex-wrap:wrap;
 }
-.p-img{
-	width:32%;
+.p-img,img{
+	width:49%;
 	position:relative;
 }
 .img-box{
@@ -1081,7 +1058,7 @@ header{
 	font-weight:bold;
 }
 .addr{
-	width:35%;
+	width:100%;
 	height:auto;
 }
 .cont-ad{
@@ -1119,59 +1096,6 @@ header{
 .add p{
 	color:white;
 	padding-top:10px;
-}
-.form{
-	width:64%;
-	padding:5px;
-	
-}
-.name{
-	width:100%;
-	height:auto;
-	display:flex;
-	justify-content:space-between;
-}
-.name input{
-	width:49%;
-	padding:5px;
-	letter-spacing:1px;
-	font-size:1rem;
-	color:gray;
-	outline-color:orange; 
-}
-.name input:hover{
-	outline-style:dottate;
-}
-.subject input{
-	width:100%;
-	height:auto;
-	margin:10px 0px 0px 0px;
-	padding:10px;
-	letter-spacing:1px;
-	font-size:13px;
-	color:gray;
-	outline-color:orange;
-}
-.tet textarea{
-	width:100%;
-	padding:10px;
-	margin:10px 0px 0px 0px;
-	font-weight:bold;
-	outline-color:orange;
-}
-.form button{
-	margin:auto;
-}
-.form a{
-	background-color:black;
-	color:white;
-	text-align:center;
-	padding:10px 30px;
-	left:50px;
-}
-.form a:hover{
-	background-color:white;
-	color:black;
 }
 .footer{
 	background-color:black;
