@@ -106,8 +106,9 @@ header{
 	 text-align:center;
 }
 .banear h1{
-	font-size:1.2rem;
+	font-size:1rem;
 	font-family: 'Poppins', sans-serif;
+	margin:1rem;
 }
 .banear p{
 	font-size:1rem;
@@ -119,16 +120,7 @@ header{
 	color:#ed430d;
 	font-family:'Poppins', sans-serif;
 }
-.banear a{
-	background-color:#ed430d;
-	padding:0.5rem 1rem;
-	color:white;
-	border-radius:20px;
-	font-family: 'Open Sans', sans-serif;
-}
-.banear a:hover{
-    color:black;
-}
+
 /* //about */
 .about{
 	padding:2rem 0;
@@ -252,16 +244,16 @@ header{
 	margin:2.2rem 0;
 }
 .box{
-	background:repeating-linear-gradient(45deg, #2fabe5, #2293ed 1px);
+	 background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	text-align:center;
 	padding:2rem 0;
 	box-shadow:0 0 5px 0px #ccc; 
 	margin:1rem 0;
 }
 .ser-icon{
-	background-color:#84d1db;
-	width:40px;
-	height:40px;
+	background-color:#c2c7c9;
+	width:45px;
+	height:45px;
 	border-radius:50%;
 	display:flex;
 	margin:auto; 
@@ -272,21 +264,23 @@ header{
 	font-size:1rem;
 }
 .ser-icon:hover{
-	background-color:white;
-	color:black;
+	background-color:black;
+	color:white;
 }
 .box h1{
 	letter-spacing:1px;
 	font-weight:bold;
 	margin:0.5rem 0;
 	text-transform:uppercase;
-font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	color:#ed430d;
 }
 .box p{
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing:1px;
 	margin:0.5rem 0;
 	text-transform:lowercase;
+	font-weight:700;
 }
 
 
@@ -361,18 +355,18 @@ font-family: 'Poppins', sans-serif;
 	text-align:center;
 }
 .button a{
-	background: linear-gradient(360deg, #3dcfcd, #209ed2);
-	border-radius:10px;
+	background: linear-gradient(10deg, #fafafa, #4f575a);
+	border-radius:5px;
 	padding:10px 35px;
 	color:black;
 	border: 1px 2px solid white;
-font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 /* contact */
 .address{
 	height:auto;
 	width:100%;
-	margin:1rem 0;
+	margin:2rem 0;
 }
 .addressform{
 	line-height:1.5rem;
@@ -383,20 +377,21 @@ font-family: 'Poppins', sans-serif;
 	display:black;
 	justify-content:space-between;
 	text-align:center;
+	margin:1rem 0;
 }
 .contcat-ad{
-	background-color: #ff5722;
+	background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	width:100%;
 	padding:1rem 0rem;
-	color:white;
 	margin:0.5rem 0;
 }
 .contcat-ad p{
-	color:white;
+	font-size:1rem;
+	letter-spacing:1px;
 	font-family: 'Open Sans', sans-serif;
 }
 .icon{
-	background-color:orange;
+	background-color:#a9b4b9;
 	border-radius:50%;
 	width:40px;
 	height:40px;
@@ -404,11 +399,14 @@ font-family: 'Poppins', sans-serif;
 	margin:auto;
 	align-items:center;
 	justify-content:center;
-	color:white;
-	font-size:1rem;
+	font-size:1.5rem;
+}
+.icon:hover{
+	background-color:white;
+	color:black;
 }
 .add{
-	background-color:#ff5722;
+	 background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	width:100%;
 	padding:0.5rem 0rem;
 	text-align:center;
@@ -420,7 +418,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 .add p{
-	color:white;
+	letter-spacing:1px;
 	padding-top:10px;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -472,7 +470,7 @@ header{
 }
 /* banear */
 .banear{
-	background-image:url("../img/hero-bg.jpg");
+	background-image:url("../img/hero.jpg");
 	background-position:center;
 	background-size:cover;
 	width:100%;
@@ -611,7 +609,7 @@ header{
 }
 .box{
 	width:49%;
-	background:repeating-linear-gradient(45deg, #2fabe5, #2293ed 1px);
+	background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	text-align:center;
 	padding:2rem 0;
 	box-shadow:0 0 10 1px #ccc;
@@ -624,7 +622,7 @@ header{
 	transition-duration:.2s;
 }
 .ser-icon{
-	background-color:#84d1db;
+	background-color:#gray;
 	width:45px;
 	height:45px;
 	border-radius:50%;
@@ -634,11 +632,11 @@ header{
 	justify-content:center; 
 }
 .ser-icon i{
-	font-size:1rem;
+	font-size:1.4rem;
 }
 .ser-icon:hover{
-	background-color:white;
-	color:black;
+	background-color:black;
+	color:white;
 }
 .box h1{
 	letter-spacing:1px;
@@ -737,16 +735,17 @@ header{
 	text-align:center;
 }
 .contcat-ad{
-	background-color: #ff5722;
+	background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	width:49%;
 	padding:1rem 0rem;
 	color:white;
 }
 .contcat-ad p{
-	color:white;
+	letter-spacing:1px;
+	font-weight:300;
 }
 .icon{
-	background-color:orange;
+	background-color:#fff;
 	border-radius:50%;
 	width:40px;
 	height:40px;
@@ -754,18 +753,17 @@ header{
 	margin:auto;
 	align-items:center;
 	justify-content:center;
-	color:white;
 	font-size:1rem;
 }
 .add{
-	background-color: #ff5722;
+	background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	width:100%;
 	padding:0.5rem 0rem;
 	text-align:center;
 	margin:1rem 0;
 }
 .addr p{
-	color:white;
+	letter-spacing:1px;
 	padding-top:10px;
 }
 .footer{
@@ -781,9 +779,11 @@ header{
 .icons{
 	font-size:1.2rem;
 	margin-right:1rem;
+	color:black;
+	background-color:white;
 }
 .icons:hover{
-	color:orange;
+	color:black;
 }
 
 
@@ -998,7 +998,6 @@ header{
 }
 /* resume */
 .resume{
-    /* background: linear-gradient(45deg, #3fd5c1, #33aee5); */
 	padding:2rem 0;
 }
 .resume-infor{
@@ -1021,7 +1020,7 @@ header{
 	border-radius:5px;
 	padding:1.5rem 0;
 	width:23%;
-	background: repeating-linear-gradient(45deg, #2fabe5, #2293ed 0.2px);
+	background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	box-shadow: 0 0 10px #5f7a86;
 }
 .box:hover {
@@ -1030,7 +1029,7 @@ header{
 	transition-duration:.2s;
 }
 .ser-icon{
-	background-color:#84d1db;
+	background-color:#ccc;
 	color:black;
 }
 .ser-icon i{
@@ -1114,16 +1113,16 @@ header{
 	text-align:center;
 }
 .contcat-ad{
-	background-color: #ff5722;
+	background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	width:49%;
 	padding:1rem 0rem;
 	color:white;
 }
 .contcat-ad p{
-	color:white;
+	letter-spacing:1px;
 }
 .icon{
-	background-color:orange;
+	background-color:#ccc;
 	border-radius:50%;
 	width:40px;
 	height:40px;
@@ -1131,18 +1130,17 @@ header{
 	margin:auto;
 	align-items:center;
 	justify-content:center;
-	color:white;
 	font-size:1rem;
 }
 .add{
-	background-color: #ff5722;
+	background: repeating-linear-gradient(15deg, #e7edef, #c2cbcf 1px);
 	width:100%;
 	padding:0.5rem 0rem;
 	text-align:center;
 }
 .add p{
-	color:white;
 	padding-top:10px;
+	letter-spacing:1px;
 }
 .footer{
 	background-color:black;
